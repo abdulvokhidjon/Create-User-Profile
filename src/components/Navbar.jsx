@@ -31,10 +31,14 @@ function Navbar() {
                   <Link to="/contact">Contact</Link>
                 </li>
                 <li>
-                  <Link to="/login">Login</Link>
+                  <Link to="/login">
+                    <del>Login</del>
+                  </Link>
                 </li>
                 <li>
-                  <Link to="/register">Register</Link>
+                  <Link to="/register">
+                    <del>Register</del>
+                  </Link>
                 </li>
               </ul>
             </details>
@@ -51,7 +55,10 @@ function Navbar() {
                 </div>
               </div>
               <div>
-                <button onClick={signOutProfile} className="btn btn-secondary">
+                <button
+                  onClick={signOutProfile}
+                  className="btn btn-accent bg-cyan-500"
+                >
                   Logout
                 </button>
               </div>
@@ -59,7 +66,6 @@ function Navbar() {
           </div>
         </nav>
       </header>
-      <div className="navbar bg-base-100 pl-8 pr-8 bg-slate-400"></div>
     </>
   );
 }
